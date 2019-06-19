@@ -1,0 +1,82 @@
+package com.zcf.pojo;
+
+import com.baomidou.mybatisplus.annotations.TableId;
+import com.baomidou.mybatisplus.enums.IdType;
+import com.baomidou.mybatisplus.activerecord.Model;
+import java.io.Serializable;
+
+/**
+ * <p>
+ * 验证码
+ * </p>
+ *
+ * @author Huaweiwei
+ * @since 2019-04-28
+ */
+public class Codes extends Model<Codes> {
+
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * 验证码id
+     */
+    @TableId(value = "code_id", type = IdType.AUTO)
+    private Integer codeId;
+    /**
+     * 验证码
+     */
+    private Integer codeName;
+    /**
+     * 添加时间
+     */
+    private String addTine;
+    private String upTime;
+
+
+    public Integer getCodeId() {
+        return codeId;
+    }
+
+    public void setCodeId(Integer codeId) {
+        this.codeId = codeId;
+    }
+
+    public Integer getCodeName() {
+        return codeName;
+    }
+
+    public void setCodeName(Integer codeName) {
+        this.codeName = codeName;
+    }
+
+    public String getAddTine() {
+        return addTine;
+    }
+
+    public void setAddTine(String addTine) {
+        this.addTine = addTine;
+    }
+
+    public String getUpTime() {
+        return upTime;
+    }
+
+    public void setUpTime(String upTime) {
+        this.upTime = upTime;
+    }
+
+    @Override
+    protected Serializable pkVal() {
+        return this.codeId;
+    }
+
+    @Override
+    public String toString() {
+        return "Codes{" +
+        "codeId=" + codeId +
+        ", codeName=" + codeName +
+        ", addTine=" + addTine +
+        ", upTime=" + upTime +
+        "}";
+    }
+}

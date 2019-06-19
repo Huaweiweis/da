@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="millionaire_game (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="millionaire_game (2)" target="1.5" />
+      <module name="millionaire_game (3)" target="1.7" />
+      <module name="millionaire_game (3) (com.zcf)" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="millionaire_game (1)" options="-extdirs src\main\webapp\WEB-INF\lib" />
+      <module name="millionaire_game (3)" options="-extdirs src\main\webapp\WEB-INF\lib" />
+      <module name="millionaire_game (3) (com.zcf)" options="-extdirs src\main\webapp\WEB-INF\lib" />
+    </option>
+  </component>
+</project>
