@@ -2,9 +2,8 @@
 /build/
 !gradle/wrapper/gradle-wrapper.jar
 logs
-/target
-.setting
-.idea
+target
+.settings
 
 ### STS ###
 .apt_generated
