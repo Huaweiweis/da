@@ -25,7 +25,6 @@ import org.springframework.stereotype.Controller;
 @ResponseBody
 @CrossOrigin
 public class CustomerserviceController {
-
 	@Autowired
 	private CustomerserviceService customerservice;
 	@PostMapping("getkefu")

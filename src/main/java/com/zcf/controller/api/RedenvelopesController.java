@@ -34,9 +34,9 @@ import org.springframework.stereotype.Controller;
  * @since 2019-05-07
  */
 @Controller
-@RequestMapping("/redenvelopes/")
 @CrossOrigin
 @ResponseBody
+@RequestMapping("/redenvelopes/")
 public class RedenvelopesController {
 	@Autowired
 	private RedenvelopesService RedenvelopesService;

@@ -25,7 +25,6 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class AgencyServiceImpl extends ServiceImpl<AgencyMapper, Agency> implements AgencyService {
-
 	@Autowired
 	private AgencyMapper agencymapper;
 	@Override
