@@ -81,7 +81,7 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
 	@Override
 	public Body codes(String phone) {
 		
-		HttpClient client = new HttpClient(); 
+		HttpClient client = new HttpClient();
 		PostMethod method = new PostMethod(Url);
 		client.getParams().setContentCharset("UTF-8");
 		method.setRequestHeader("ContentType","application/x-www-form-urlencoded;charset=UTF-8");
@@ -568,40 +568,6 @@ public class UsersServiceImpl extends ServiceImpl<UsersMapper, Users> implements
 		
 		List<Userroom> list =  userroommapper.selectfangzhu(roomid);//房间
 		list.get(0).setUserrooms(userroommapper.selectchengyuan(roomid));
-		
-		/* WebSocket websocket=new WebSocket(); 
-		 Map<String, Object> msg=new HashMap<>(); 
-		 msg.put("list", list);*/
-		 
-		/*list.get(0).setRoomuser(usersmapper.getusers(roomid));
-		WebSocket websocket=new WebSocket(); 
-		Map<String, Object> msg=new HashMap<>(); 
-		msg.put("list", list); 
-		websocket.onMessage(JsonUtils.objectToJson(list)); */
-		
-		/*EntityWrapper<Userroom> wrapper = new EntityWrapper<>();
-		wrapper.eq("room_id", roomid);
-		List<Userroom> list = userroommapper.selectList(wrapper);
-		List<Users> Listss = new ArrayList<>();
-		
-		if(!list.isEmpty()) {
-			Room room = new Room();
-			room.setUserId(roomid);
-			Room selectOne2 = roommapper.selectOne(room);
-			selectOne2.setUserroom(list);
-			for (int i = 0; i < list.size(); i++) {
-				list.get(i).getUserId();
-				EntityWrapper<Users> wtapper= new EntityWrapper<>();
-				wtapper.eq("user_id", list.get(i).getUserId());
-				List<Users> Lists = usersmapper.selectList(wtapper);
-				Listss.addAll(Lists);
-			}
-			WebSocket websocket=new WebSocket(); 
-			Map<String, Object> msg=new HashMap<>(); 
-			msg.put("Listss", Listss); 
-			websocket.onMessage(JsonUtils.objectToJson(msg)); 
-			return Body.newInstance(Listss);
-		}*/
 		return Body.newInstance(list);
 	}
 	@Override

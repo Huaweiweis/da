@@ -8,494 +8,50 @@
   <component name="ChangeListManager">
     <list default="true" id="7a6410d6-390a-4fe4-8985-0a6c0315bf39" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/code/BufferedImageLuminanceSource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/code/QRCodeUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/code/BufferedImageLuminanceSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/code/BufferedImageLuminanceSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/code/QRCodeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/code/QRCodeUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/interceptor/WebInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/interceptor/WebInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/result/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/result/PageResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/safe/TokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/safe/TokenUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/DateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/DateUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/DealString.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/DesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/DesUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/EmojiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/EmojiUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/HttpUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/Hutool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/Hutool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/ImageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/ImageUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/MD5Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/MyX509TrustManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/MyX509TrustManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/controller/ProController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/controller/ProController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/controller/api/CodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/controller/api/CodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/controller/api/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/controller/api/RoomController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/controller/api/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/controller/api/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/AccountdetailsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/AccountdetailsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/AgencyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/AgencyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/AgreementMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/AgreementMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/ApplysMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/ApplysMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/BonusMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/BonusMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/CodeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/CodeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/CodesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/CodesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/ConcurnaysayMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/ConcurnaysayMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/CustomerserviceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/CustomerserviceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/DifenMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/DifenMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/GetredenvelopesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/GetredenvelopesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/HtloginMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/HtloginMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/RedenvelopesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/RedenvelopesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/RoomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/RoomMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/UserroomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/UserroomMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/mapper/UsersMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/AliPays/ALiPayConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/ClientRequestHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/ClientResponseHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/ConstantUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/GsonUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/HttpClientUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/Md5Util.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/PrepayIdRequestHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/RequestHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/ResponseHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/TenpayHttpClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/TenpayUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/UUID.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/WXUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/WxNotifyParam.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/XMLUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/action/PayAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/alipay/AliPayService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/alipay/Configs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/config/applicationContext-pay.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/weixin/EduGZHConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/weixin/EduWXConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/weixin/HttpUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pay/weixin/WxPayService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Accountdetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Accountdetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Agency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Agency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Agreement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Agreement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Applys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Applys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Bonus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Bonus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Codes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Codes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Concurnaysay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Concurnaysay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Customerservice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Customerservice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Difen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Difen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Getredenvelopes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Getredenvelopes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/DateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/IPAddrFetcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/JsonUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/controller/ALiPayController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/controller/ProController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/controller/WXpayController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/controller/console/AdminController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/controller/help.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Htlogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Htlogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Redenvelopes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Redenvelopes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Userroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Userroom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/AccountdetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/AccountdetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/AgencyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/AgencyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/AgreementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/AgreementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/ApplysService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/ApplysService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/BonusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/BonusService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/CodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/CodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/CodesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/CodesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/ConcurnaysayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/ConcurnaysayService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/CustomerserviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/CustomerserviceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/DifenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/DifenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/GetredenvelopesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/GetredenvelopesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/HtloginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/HtloginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/RedenvelopesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/RedenvelopesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/RoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/RoomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/UserroomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/UserroomService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/UsersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/UsersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/AccountdetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/AccountdetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/AgencyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/AgencyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/AgreementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/AgreementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/ApplysServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/ApplysServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/BonusServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/BonusServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/CodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/CodeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/CodesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/CodesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/ConcurnaysayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/ConcurnaysayServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/CustomerserviceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/CustomerserviceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/DifenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/DifenServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/GetredenvelopesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/GetredenvelopesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/HtloginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/HtloginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/RedenvelopesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/RedenvelopesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/RoomServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/UserroomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/UserroomServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/UsersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/UsersServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/Agencys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/utils/Agencys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/AutoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/utils/AutoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/BigDecimals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/CookieUtils.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/ExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/utils/ExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/FileUploadUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/utils/FileUploadUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/HttpUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/utils/JsonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/Pickup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/utils/Pickup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/utils/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/Redenve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/utils/Redenve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/StringHideUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/StringUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/utils/UploadImgUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zcf/utils/UploadImgUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/RedenvelopesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mappers/RedenvelopesMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-MVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-MVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-transaction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext-transaction.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/mall/TestMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mall/TestMP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test1/TestMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test1/TestMP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/code/BufferedImageLuminanceSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/code/QRCodeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/code/BufferedImageLuminanceSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/code/BufferedImageLuminanceSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/code/NameUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/code/NameUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/code/QRCodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/code/QRCodeUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/code/ShareCodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/code/ShareCodeUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/exception/JsonRuntimeException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/exception/JsonRuntimeException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/vo/in/PageVo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zcf/vo/in/UserParam.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/interceptor/WebInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/interceptor/WebInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/json/Body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/json/Body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/json/Meta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/json/Meta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/result/PageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/result/PageResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/result/ResultVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/result/ResultVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/safe/TokenUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/safe/TokenUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/DateUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/DealString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/DesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/DesUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/EmojiUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/EmojiUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/HttpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/HttpUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/Hutool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/Hutool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/IPAddrFetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/IPAddrFetcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/ImageUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/ImageUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/JsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/JsonUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/ListUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/ListUtils$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/ListUtils$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/ListUtils$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/ListUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/ListUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/MD5Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/MyX509TrustManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/MyX509TrustManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/NumberUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/NumberUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/ProController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/ProController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/AccountdetailsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/AccountdetailsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/AgencyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/AgencyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/AgreementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/AgreementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/ApplysController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/ApplysController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/BonusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/BonusController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/CodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/CodeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/CodesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/CodesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/ConcurnaysayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/ConcurnaysayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/CustomerserviceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/CustomerserviceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/DifenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/DifenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/GetredenvelopesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/GetredenvelopesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/HtloginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/HtloginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/RedenvelopesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/RedenvelopesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/RoomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/ServiceInitialize.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/ServiceInitialize.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/UserroomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/UserroomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/controller/api/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/AccountdetailsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/AccountdetailsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/AgencyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/AgencyMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/AgreementMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/AgreementMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/ApplysMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/ApplysMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/BonusMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/BonusMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/CodeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/CodeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/CodesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/CodesMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/ConcurnaysayMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/ConcurnaysayMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/CustomerserviceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/CustomerserviceMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/DifenMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/DifenMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/GetredenvelopesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/GetredenvelopesMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/HtloginMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/HtloginMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/RedenvelopesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/RedenvelopesMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/RoomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/RoomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/UserroomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/UserroomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/mapper/UsersMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/mapper/UsersMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/AliPays/ALiPayConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/ClientRequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/ClientResponseHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/ConstantUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/GsonUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/GsonUtils$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/GsonUtils$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/GsonUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/HttpClientUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/Md5Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/PrepayIdRequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/RequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/ResponseHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/TenpayHttpClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/TenpayUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/UUID.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/WXUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/WxNotifyParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/WXpay/XMLUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/action/PayAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/alipay/AliPayService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/alipay/Configs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/config/applicationContext-pay.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/weixin/EduGZHConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/weixin/EduWXConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/weixin/HttpUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pay/weixin/WxPayService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Accountdetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Accountdetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Agency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Agency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Agreement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Agreement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Applys.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Applys.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Bonus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Bonus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Code.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Code.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Codes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Codes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Concurnaysay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Concurnaysay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Customerservice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Customerservice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Difen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Difen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Getredenvelopes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Getredenvelopes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Htlogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Htlogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Redenvelopes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Redenvelopes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Userroom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Userroom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/pojo/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/AccountdetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/AccountdetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/AgencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/AgencyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/AgreementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/AgreementService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/ApplysService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/ApplysService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/BonusService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/BonusService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/CodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/CodeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/CodesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/CodesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/ConcurnaysayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/ConcurnaysayService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/CustomerserviceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/CustomerserviceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/DifenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/DifenService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/GetredenvelopesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/GetredenvelopesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/HtloginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/HtloginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/RedenvelopesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/RedenvelopesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/RoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/RoomService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/UserroomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/UserroomService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/UsersService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/AccountdetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/AccountdetailsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/AgencyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/AgencyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/AgreementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/AgreementServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/ApplysServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/ApplysServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/BonusServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/BonusServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/CodeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/CodeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/CodesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/CodesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/ConcurnaysayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/ConcurnaysayServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/CustomerserviceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/CustomerserviceServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/DifenServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/DifenServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/GetredenvelopesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/GetredenvelopesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/HtloginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/HtloginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/RedenvelopesServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/RedenvelopesServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/RedenvelopesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/RedenvelopesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/RoomServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/RoomServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/UserroomServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/UserroomServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/DateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/IPAddrFetcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/common/utils/JsonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/controller/ProController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/service/impl/UsersServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/Agencys.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/Agencys.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/AutoPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/AutoPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/BigDecimals.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/CloudSMS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/CloudSMS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/CookieUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/CookieUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/CookieUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/ExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/ExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/FileUploadUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/FileUploadUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/GenerateName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/GenerateName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/HttpUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/HttpUtils$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/HttpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/HttpUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/IDUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/IDUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/JsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/JsonUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/MyException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/MyException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/PhotoUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/PhotoUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/Pickup$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/Pickup$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/Pickup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/Pickup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/HttpUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/HttpUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/PropertiesUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/PropertiesUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/Redenve$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/Redenve$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/Redenve.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/Redenve.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/SpringContextUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/SpringContextUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/StringHideUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/StringHideUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/StringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/UploadImgUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/UploadImgUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/WebSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/utils/WebSocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/vo/in/PageVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/vo/in/PageVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/vo/in/UserParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zcf/vo/in/UserParam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-MVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext-MVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext-mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext-transaction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext-transaction.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/code/BufferedImageLuminanceSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/code/QRCodeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/code/BufferedImageLuminanceSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/code/BufferedImageLuminanceSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/code/NameUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/code/NameUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/code/QRCodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/code/QRCodeUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/code/ShareCodeUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/code/ShareCodeUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/exception/JsonRuntimeException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/exception/JsonRuntimeException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/StringHideUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/utils/StringUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/vo/in/PageVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zcf/vo/in/UserParam.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/interceptor/WebInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/interceptor/WebInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/json/Body.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/json/Body.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/json/Meta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/json/Meta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/result/PageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/result/PageResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/result/ResultVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/result/ResultVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/safe/TokenUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/safe/TokenUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/DateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/DateUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/DealString.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/DesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/DesUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/EmojiUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/EmojiUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/HttpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/HttpUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/Hutool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/Hutool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/IPAddrFetcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/IPAddrFetcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/ImageUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/ImageUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/JsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/JsonUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/ListUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/ListUtils$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/ListUtils$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/ListUtils$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/ListUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/ListUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/MD5Util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/MyX509TrustManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/MyX509TrustManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/NumberUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/NumberUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/ProController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/ProController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/AccountdetailsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/AccountdetailsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/AgencyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/AgencyController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/AgreementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/AgreementController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/ApplysController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/ApplysController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/BonusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/BonusController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/CodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/CodeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/CodesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/CodesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/ConcurnaysayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/ConcurnaysayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/CustomerserviceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/CustomerserviceController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/DifenController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/DifenController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/GetredenvelopesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/GetredenvelopesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/HtloginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/HtloginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/RedenvelopesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/RedenvelopesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/RoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/RoomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/ServiceInitialize.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/ServiceInitialize.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/UserroomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/UserroomController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/api/UsersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/AccountdetailsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/AccountdetailsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/AgencyMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/AgencyMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/AgreementMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/AgreementMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/ApplysMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/ApplysMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/BonusMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/BonusMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/CodeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/CodeMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/CodesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/CodesMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/ConcurnaysayMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/ConcurnaysayMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/CustomerserviceMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/CustomerserviceMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/DifenMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/DifenMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/GetredenvelopesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/GetredenvelopesMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/HtloginMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/HtloginMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/RedenvelopesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/RedenvelopesMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/RoomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/RoomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/UserroomMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/UserroomMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/UsersMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/mapper/UsersMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/AliPays/ALiPayConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/ClientRequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/ClientResponseHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/ConstantUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/GsonUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/GsonUtils$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/GsonUtils$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/GsonUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/HttpClientUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/Md5Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/PrepayIdRequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/RequestHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/ResponseHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/TenpayHttpClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/TenpayUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/UUID.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/WXUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/WxNotifyParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/WXpay/XMLUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/action/PayAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/alipay/AliPayService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/alipay/Configs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/config/applicationContext-pay.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/weixin/EduGZHConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/weixin/EduWXConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/weixin/HttpUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pay/weixin/WxPayService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Accountdetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Accountdetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Agency.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Agency.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Agreement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Agreement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Applys.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Applys.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Bonus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Bonus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Code.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Code.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Codes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Codes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Concurnaysay.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Concurnaysay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Customerservice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Customerservice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Difen.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Difen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Getredenvelopes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Getredenvelopes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Htlogin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Htlogin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Redenvelopes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Redenvelopes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Room.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Userroom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Userroom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/pojo/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/AccountdetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/AccountdetailsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/AgencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/AgencyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/AgreementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/AgreementService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/ApplysService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/ApplysService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/BonusService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/BonusService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/CodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/CodeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/CodesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/CodesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/ConcurnaysayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/ConcurnaysayService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/CustomerserviceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/CustomerserviceService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/DifenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/DifenService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/GetredenvelopesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/GetredenvelopesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/HtloginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/HtloginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/RedenvelopesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/RedenvelopesService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/RoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/RoomService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/UserroomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/UserroomService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/UsersService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/UsersService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/AccountdetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/AccountdetailsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/AgencyServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/AgencyServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/AgreementServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/AgreementServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/ApplysServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/ApplysServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/BonusServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/BonusServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/CodeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/CodeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/CodesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/CodesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/ConcurnaysayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/ConcurnaysayServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/CustomerserviceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/CustomerserviceServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/DifenServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/DifenServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/GetredenvelopesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/GetredenvelopesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/HtloginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/HtloginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/RedenvelopesServiceImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/RedenvelopesServiceImpl$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/RedenvelopesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/RedenvelopesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/RoomServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/RoomServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/UserroomServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/UserroomServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/DateUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/IPAddrFetcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/common/utils/JsonUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/controller/ProController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/UsersServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/service/impl/UsersServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/Agencys.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/Agencys.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/AutoPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/AutoPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/BigDecimals.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/CloudSMS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/CloudSMS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/CookieUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/CookieUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/CookieUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/ExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/ExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/FileUploadUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/FileUploadUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/GenerateName.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/GenerateName.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/HttpUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/HttpUtils$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/HttpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/HttpUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/IDUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/IDUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/JsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/JsonUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/MyException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/MyException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/PhotoUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/PhotoUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/Pickup$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/Pickup$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/Pickup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/Pickup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/HttpUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/HttpUtils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/PropertiesUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/PropertiesUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/Redenve$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/Redenve$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/Redenve.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/Redenve.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/SpringContextUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/SpringContextUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/StringHideUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/StringHideUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/StringUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/StringUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/UploadImgUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/UploadImgUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/WebSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/WebSocket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/vo/in/PageVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/vo/in/PageVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/vo/in/UserParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/vo/in/UserParam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/spring/applicationContext-MVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/spring/applicationContext-MVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/spring/applicationContext-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/spring/applicationContext-mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/spring/applicationContext-transaction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/spring/applicationContext-transaction.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/alipay-sdk-java-3.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/commons-cli-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/fluent-hc-4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/httpclient-cache-4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/httpcore-ab-4.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/httpcore-nio-4.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/httpmime-4.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/jdom2-2.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/okhttp-3.11.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/okio-1.14.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/org.json-chargebee-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/qiniu-java-sdk-7.2.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/lib/sdk-6.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/mall/TestMP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mall/TestMP.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test1/TestMP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test1/TestMP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/StringHideUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/utils/StringUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/vo/in/PageVo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/millionaire_game/WEB-INF/classes/com/zcf/vo/in/UserParam.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -511,10 +67,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/utils/FileUploadUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/pojo/Htlogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="270">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -574,7 +130,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zcf/controller/api/UsersController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zcf/controller/api/RoomController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/RedenvelopesServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/UsersServiceImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/zcf/common/code/NameUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/DealString.java" />
@@ -584,6 +139,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/Hutool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zcf/common/safe/TokenUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zcf/utils/PropertiesUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zcf/service/impl/UsersServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zcf/common/interceptor/WebInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zcf/utils/ExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/IPAddrFetcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zcf/common/utils/DateUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zcf/pojo/Htlogin.java" />
       </list>
     </option>
   </component>
@@ -665,45 +226,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="zcf" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="millionaire_game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="millionaire_game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zcf" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="millionaire_game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="millionaire_game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zcf" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="millionaire_game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="millionaire_game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zcf" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="millionaire_game" type="b2602c69:ProjectViewProjectNode" />
-              <item name="millionaire_game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zcf" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -817,12 +340,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560910854817</updated>
       <workItem from="1560910857950" duration="19838000" />
-      <workItem from="1560991955842" duration="5719000" />
+      <workItem from="1560991955842" duration="6250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25557000" />
+    <option name="totallyTimeSpent" value="26088000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,7 +363,7 @@
       <window_info id="Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.75931674" visible="true" weight="0.25294748" />
+      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.75931674" visible="true" weight="0.25294748" />
       <window_info id="Structure" order="4" sideWeight="0.24068323" side_tool="true" weight="0.24973205" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -853,7 +376,7 @@
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32972974" />
       <window_info anchor="bottom" id="Run" order="10" weight="0.44054055" />
-      <window_info anchor="bottom" id="Debug" order="11" visible="true" weight="0.35135135" />
+      <window_info active="true" anchor="bottom" id="Debug" order="11" visible="true" weight="0.35135135" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="14" weight="0.43603605" />
@@ -921,97 +444,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/controller/WXpayController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/pay/alipay/AliPayService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-984">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-configuration2/2.2/commons-configuration2-2.2.jar!/org/apache/commons/configuration2/Configuration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/pay/alipay/Configs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/pay/AliPays/ALiPayConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-145">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/UUID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/ClientResponseHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/pay/WXpay/ClientRequestHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/pay/action/PayAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/service/impl/AgencyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="35" column="48" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/controller/api/RoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2549#2550#0" expanded="true" />
-            <element signature="e#2584#2585#0" expanded="true" />
-            <element signature="e#3328#3329#0" expanded="true" />
-            <element signature="e#3376#3377#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/service/impl/RedenvelopesServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -2123,16 +1555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/service/impl/UsersServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="228" column="38" lean-forward="true" selection-start-line="228" selection-start-column="38" selection-end-line="228" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/code/BufferedImageLuminanceSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-119">
@@ -2175,13 +1597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/interceptor/WebInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/result/PageResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -2193,13 +1608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/DateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8350">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -2221,30 +1629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
           <caret line="79" column="63" lean-forward="true" selection-start-line="79" selection-start-column="63" selection-end-line="79" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/HttpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="288" column="9" lean-forward="true" selection-start-line="288" selection-start-column="9" selection-end-line="288" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/Hutool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3775">
-          <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="119" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/ImageUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-353">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -2342,13 +1726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/utils/ExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/utils/GenerateName.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -2356,10 +1733,152 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/utils/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/IPAddrFetcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-205">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/HttpUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2445">
+          <caret line="180" column="40" lean-forward="true" selection-start-line="180" selection-start-column="40" selection-end-line="180" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/Hutool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1293">
+          <caret line="119" column="7" selection-start-line="119" selection-start-column="7" selection-end-line="119" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/ImageUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/utils/ExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/interceptor/WebInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/utils/FileUploadUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/service/impl/UsersServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="555" column="13" selection-start-line="555" selection-start-column="13" selection-end-line="555" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/common/utils/DateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4990">
+          <caret line="203" column="19" selection-start-line="203" selection-start-column="19" selection-end-line="203" selection-end-column="19" />
+          <folding>
+            <element signature="e#3442#3443#0" expanded="true" />
+            <element signature="e#3500#3501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/controller/WXpayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="442" column="33" lean-forward="true" selection-start-line="442" selection-start-column="33" selection-end-line="442" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/controller/ProController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/controller/console/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/vo/in/PageVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/vo/in/UserParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/service/impl/HtloginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3.jar!/com/baomidou/mybatisplus/activerecord/Model.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zcf/pojo/Htlogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
         </state>
       </provider>
     </entry>

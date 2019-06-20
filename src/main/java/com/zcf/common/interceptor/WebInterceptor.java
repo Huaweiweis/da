@@ -2,7 +2,7 @@ package com.zcf.common.interceptor;
 
 import com.zcf.common.json.Body;
 import com.zcf.common.json.Meta;
-import com.zcf.common.utils.JsonUtils;
+import com.zcf.utils.JsonUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -67,7 +67,7 @@ public class WebInterceptor implements HandlerInterceptor {
 		response.setContentType("application/json");
 		OutputStream out = response.getOutputStream();
 		PrintWriter pw = new PrintWriter(new OutputStreamWriter(out, "utf-8"));
-		pw.println(JsonUtils.beanToJson(new Body(meta)));
+		pw.println(JsonUtils.objectToJson(new Body(meta)));
 		pw.flush();
 		pw.close();
 	}

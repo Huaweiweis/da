@@ -1,7 +1,6 @@
 package com.zcf.utils;
 
 import com.zcf.common.json.Body;
-import com.zcf.common.utils.JsonUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;
@@ -27,7 +26,7 @@ public class ExceptionHandler implements HandlerExceptionResolver {
 			writer = response.getWriter();
 			if (isAjax(request)) {
 				response.setHeader("content-type", "application/json;charset=UTF-8");
-				writer.println(JsonUtils.beanToJson(Body.newInstance(201, ex.toString())));
+				writer.println(JsonUtils.objectToJson(Body.newInstance(201, ex.toString())));
 			} else {
 				response.setHeader("content-type", "text/html;charset=UTF-8");
 				outScript(writer, ex);
