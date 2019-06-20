@@ -3,6 +3,8 @@
 !gradle/wrapper/gradle-wrapper.jar
 logs
 /target
+.setting
+.idea
 
 ### STS ###
 .apt_generated
