@@ -1,11 +1,10 @@
 package com.zcf.common.utils;
 
-import java.security.SecureRandom;
-
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
+import java.security.SecureRandom;
 
 /**
  * DES加密解密工具类
@@ -16,9 +15,6 @@ public class DesUtils {
 
 	private static String DES = "DES";
 	private static String SECRET_KEY = "hUfNg?;!-@#$*%2@%^*(*()P";
-
-	private DesUtils() {
-	}
 
 	public static void main(String[] args) throws Exception {
 		// String code = "3~41~" + System.currentTimeMillis();

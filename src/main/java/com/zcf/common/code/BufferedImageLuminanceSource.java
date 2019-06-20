@@ -1,10 +1,10 @@
 package com.zcf.common.code;
 
-import java.awt.Graphics2D;
+import com.google.zxing.LuminanceSource;
+
+import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
-
-import com.google.zxing.LuminanceSource;
 
 public class BufferedImageLuminanceSource extends LuminanceSource {
 	private final BufferedImage image;

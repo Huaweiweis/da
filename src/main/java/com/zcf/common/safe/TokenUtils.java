@@ -1,7 +1,5 @@
 package com.zcf.common.safe;
 
-import com.zcf.common.utils.DesUtils;
-
 public class TokenUtils {
 	public static final String moddle = "D_X";
 

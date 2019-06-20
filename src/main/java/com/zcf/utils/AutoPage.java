@@ -1,9 +1,9 @@
 package com.zcf.utils;
 
-import java.util.List;
-
 import com.zcf.common.result.PageResult;
 import com.zcf.common.result.ResultVo;
+
+import java.util.List;
 
 public class AutoPage<T> {
 	public static <T>ResultVo work(List<T> list) {

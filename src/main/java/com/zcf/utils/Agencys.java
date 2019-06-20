@@ -1,9 +1,5 @@
 package com.zcf.utils;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.zcf.common.utils.Hutool;
 import com.zcf.mapper.AccountdetailsMapper;
@@ -12,6 +8,9 @@ import com.zcf.mapper.UsersMapper;
 import com.zcf.pojo.Accountdetails;
 import com.zcf.pojo.Agency;
 import com.zcf.pojo.Users;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.List;
 
 public class Agencys {
 

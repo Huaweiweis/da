@@ -1,8 +1,8 @@
 package com.zcf.common.result;
 
-import java.util.List;
-
 import com.github.pagehelper.PageInfo;
+
+import java.util.List;
 
 public class PageResult {
 	/**

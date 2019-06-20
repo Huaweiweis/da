@@ -1,8 +1,8 @@
 package com.zcf.common.utils;
 
-import java.security.MessageDigest;
-
 import org.springframework.beans.factory.annotation.Value;
+
+import java.security.MessageDigest;
 
 /**
  * Created by geely

@@ -1,10 +1,9 @@
 package com.zcf.mapper;
 
+import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.zcf.pojo.Concurnaysay;
 
 import java.util.List;
-
-import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 /**
  * <p>

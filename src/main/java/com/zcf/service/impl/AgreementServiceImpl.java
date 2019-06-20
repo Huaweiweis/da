@@ -1,19 +1,18 @@
 package com.zcf.service.impl;
 
-import com.zcf.pojo.Agreement;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.zcf.common.json.Body;
 import com.zcf.common.result.ResultVo;
 import com.zcf.common.utils.Hutool;
 import com.zcf.mapper.AgreementMapper;
+import com.zcf.pojo.Agreement;
 import com.zcf.service.AgreementService;
 import com.zcf.utils.AutoPage;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>

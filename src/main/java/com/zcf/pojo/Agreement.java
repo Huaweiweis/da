@@ -1,8 +1,9 @@
 package com.zcf.pojo;
 
+import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.enums.IdType;
-import com.baomidou.mybatisplus.activerecord.Model;
+
 import java.io.Serializable;
 
 /**

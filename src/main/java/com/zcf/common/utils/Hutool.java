@@ -1,19 +1,14 @@
 package com.zcf.common.utils;
 
+import com.zcf.common.json.Body;
+
 import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import com.zcf.common.json.Body;
 
 public class Hutool {
 
@@ -87,13 +82,13 @@ public class Hutool {
 		String time = dtf.format(date);
 		StringBuffer bf = new StringBuffer();
 		int len = time.length();
-		bf.append(time.substring(0, 4));
+		bf.append(time, 0, 4);
 		bf.append(getRandomString(2));
-		bf.append(time.substring(4, 8));
+		bf.append(time, 4, 8);
 		bf.append(getRandomString(2));
-		bf.append(time.substring(8, 12));
+		bf.append(time, 8, 12);
 		bf.append(getRandomString(2));
-		bf.append(time.substring(12, len));
+		bf.append(time, 12, len);
 
 		return bf.toString();
 	}
@@ -106,8 +101,7 @@ public class Hutool {
 	 */
 	public static String parseDateForString(LocalDateTime date) {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
-		String time = dtf.format(date);
-		return time;
+		return dtf.format(date);
 	}
 
 	/**
@@ -118,8 +112,7 @@ public class Hutool {
 	 */
 	public static LocalDateTime parseStringToDate(String time) {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-		LocalDateTime ldt = LocalDateTime.parse(time, dtf);
-		return ldt;
+		return LocalDateTime.parse(time, dtf);
 	}
 
 	/**

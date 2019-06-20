@@ -21,8 +21,7 @@ public class EmojiUtil {
 		if (StringUtils.isEmpty(source)) {
 			return null;
 		}
-		Pattern pattern = Pattern.compile(
-				"[^(\u2E80-\u9FFF\\w\\s`~!@#\\$%\\^&\\*\\(\\)_+-？（）——=\\[\\]{}\\|;。，、《》”：；“！……’:'\"<,>\\.?/\\\\*)]");
+		Pattern pattern = Pattern.compile("[^(\u2E80-\u9FFF\\w\\s`~!@#$%^&*()_+-？（）——=\\[\\]{}|;。，、《》”：；“！……’:'\"<,>.?/\\\\*)]");
 		Matcher matcher = pattern.matcher(source);
 		StringBuffer sb2 = new StringBuffer();
 		while (matcher.find()) {

@@ -1,17 +1,13 @@
 package com.zcf.service.impl;
 
-import com.zcf.pojo.Accountdetails;
-import com.zcf.pojo.Applys;
-import com.zcf.pojo.Concurnaysay;
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.zcf.common.json.Body;
 import com.zcf.common.utils.Hutool;
-import com.zcf.mapper.AccountdetailsMapper;
 import com.zcf.mapper.ApplysMapper;
 import com.zcf.mapper.ConcurnaysayMapper;
+import com.zcf.pojo.Applys;
+import com.zcf.pojo.Concurnaysay;
 import com.zcf.service.ConcurnaysayService;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,27 +1,21 @@
 package com.zcf.service.impl;
 
-import com.zcf.pojo.Room;
-import com.zcf.pojo.Userroom;
-import com.zcf.pojo.Users;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.zcf.common.json.Body;
 import com.zcf.common.utils.Hutool;
 import com.zcf.mapper.RoomMapper;
-import com.zcf.mapper.UserMapper;
 import com.zcf.mapper.UserroomMapper;
 import com.zcf.mapper.UsersMapper;
+import com.zcf.pojo.Room;
+import com.zcf.pojo.Userroom;
+import com.zcf.pojo.Users;
 import com.zcf.service.RoomService;
-import com.zcf.utils.JsonUtils;
-import com.zcf.utils.WebSocket;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>

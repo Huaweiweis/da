@@ -1,19 +1,17 @@
 package com.zcf.common.interceptor;
 
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import com.zcf.common.json.Body;
+import com.zcf.common.json.Meta;
+import com.zcf.common.utils.JsonUtils;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.zcf.common.json.Body;
-import com.zcf.common.json.Meta;
-import com.zcf.common.utils.JsonUtils;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 
 /**
  * 请求拦截器
