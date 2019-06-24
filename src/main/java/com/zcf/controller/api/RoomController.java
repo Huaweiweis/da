@@ -150,5 +150,18 @@ public class RoomController {
 	public Body youxizhongquit(Integer roomid) {
 		return roomservice.youxizhongquit(roomid);
 	}
+	@PostMapping("chaxunroom")
+	public Body chaxunroom(Integer difen) {
+		return roomservice.chaxunroom(difen);
+	}
+	@PostMapping("xuniroom")
+	public Body xuniroom(String roomname, Double roomintegral,Integer num) {
+		return roomservice.xuniroom(roomname, roomintegral, num);
+	}
+	@PostMapping("sfjqrroom")
+	public Body sfjqrroom(Integer roomid) {
+		return roomservice.sfjqrroom(roomid);
+				
+	}
 }
 

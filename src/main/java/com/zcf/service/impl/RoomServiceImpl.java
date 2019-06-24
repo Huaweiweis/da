@@ -11,6 +11,8 @@ import com.zcf.pojo.Room;
 import com.zcf.pojo.Userroom;
 import com.zcf.pojo.Users;
 import com.zcf.service.RoomService;
+import com.zcf.utils.GenerateName;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -318,5 +320,109 @@ public class RoomServiceImpl extends ServiceImpl<RoomMapper, Room> implements Ro
 		}else {
 			return Body.newInstance(501,"游戏进行中...");
 		}
+	}
+	@Override
+	public Body chaxunroom(Integer difen) {
+		EntityWrapper<Room> wrapper = new EntityWrapper<>();
+		wrapper.eq("whether_to_end", 0);
+		wrapper.eq("room_integral", difen);
+		List<Room> selectList = roommapper.selectList(wrapper);
+		if(!selectList.isEmpty()) {
+			return Body.newInstance(selectList);
+		}
+		return Body.newInstance(501,"当前没有您查找的房间");
+	}
+	@Override
+	public Body xuniroom(String roomname, Double roomintegral,Integer num) {
+		// TODO Auto-generated method stub
+		if(num==1) {
+			Room room = new Room();
+			room.setRoomName(GenerateName.getName());
+			room.setRoomIntegral(roomintegral);
+			room.setAddTime(Hutool.parseDateToString());
+			room.setUserId(0);
+			room.setWhetherToEnd(0);
+			room.setWhetherPassword(1);
+			room.setRoomNum(0);
+			roommapper.insert(room);
+			return Body.newInstance("虚拟房间创建成功");
+		}else {
+			for (int i = 0; i < num; i++) {
+				Room room = new Room();
+				room.setRoomName(GenerateName.getName());
+				room.setRoomIntegral(roomintegral);
+				room.setAddTime(Hutool.parseDateToString());
+				room.setUserId(0);
+				room.setWhetherToEnd(0);
+				room.setWhetherPassword(1);
+				room.setRoomNum(0);
+				roommapper.insert(room);
+				Double jifen= room.getRoomIntegral()*3*6;
+				
+				EntityWrapper<Users> wrapper = new EntityWrapper<>();
+				wrapper.eq("user_robot", 1);
+				List<Users> selectList = usersmapper.selectList(wrapper);
+				List<Users> list = new ArrayList<>();
+				if(selectList!=null) {
+					if(selectList.get(i).getUserRechargeIntegral()>jifen) {
+						for (int j = 0; j < selectList.size(); j++) {
+							list.add(selectList.get(j));
+						}
+					}
+				}
+				if(!list.isEmpty()) {
+					for (int x = 1; x < 6; x++) {//取出五个积分大于有资格当房主的机器人
+						if(x<list.size() && x==1) {
+							room.setUserId(list.get(0).getUserId());
+							
+							
+							Userroom userroom = new Userroom();
+							userroom.setUserId(list.get(0).getUserId());
+							userroom.setRoomId(room.getRoomId());
+							userroom.setAddTime(Hutool.parseDateToString());
+							
+							roommapper.updateById(room);
+							userroommapper.insert(userroom);
+							
+							Users selectById = usersmapper.selectById(list.get(0).getUserId());
+							selectById.setUserRobot(2);
+							usersmapper.updateById(selectById);
+						}
+						if(x<list.size()&& x!=1) {
+							Userroom userroom = new Userroom();
+							userroom.setUserId(list.get(x).getUserId());
+							userroom.setRoomId(room.getRoomId());
+							userroom.setAddTime(Hutool.parseDateToString());
+							
+							room.setRoomNum(x);
+							roommapper.updateById(room);
+							userroommapper.insert(userroom);
+							
+							Users selectById = usersmapper.selectById(list.get(0).getUserId());
+							selectById.setUserRobot(2);
+							usersmapper.updateById(selectById);
+						}
+					}
+				}
+				
+			}
+			return Body.newInstance("虚拟房间创建成功");
+		}
+	}
+	@Override
+	public Body sfjqrroom(Integer roomid) {
+		Room selectById = roommapper.selectById(roomid);
+		if(selectById.getUserId()==0) {
+			return Body.newInstance(501,"机器人房间");
+		}
+		return Body.BODY_200;
+		
+	}
+	@Override
+	public Body jiqirenfanzhu(Integer roomid) {
+		Room selectById = roommapper.selectById(roomid);
+		Double menkan= (double) (selectById.getResidue()*3*6);
+		
+		return null;
 	}
 }

@@ -20,6 +20,7 @@ import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -65,49 +66,15 @@ public class WebSocket {
 		clients.put( roominfo, this);
 		Key = roominfo;
 		JSONObject jsonObject=JSONObject.fromObject(roominfo);
+
+		Body sfjqrroom = roomService.sfjqrroom(jsonObject.getInt("roomid"));
+		int code = sfjqrroom.getMeta().getCode();
+//		
 		Body entrancerooms = roomService.entrancerooms(jsonObject.getInt("roomid"),jsonObject.getInt("userid"),jsonObject.getString("password"));
 		addOnlineCount();
 		log.info("有新连接加入！当前在线人数为" + getOnlineCount() + "加入的管理员ID为:" + roominfo+"房间信息"+entrancerooms);
 		List<Userroom> selectList = userroomService.selectList(new EntityWrapper<Userroom>().eq("room_id", jsonObject.get("roomid")));
-		Room room = roomService.selectById(jsonObject.getInt("roomid"));
 
-		if(jsonObject.getInt("userid")==room.getUserId()) {
-			List<Users> selectList2 = usersService.selectList(new EntityWrapper<Users>().eq("user_robot",1));
-			if(!selectList2.isEmpty()){
-				for (int i = 0; i < selectList.size(); i++) {
-					Users user = usersService.selectById(selectList.get(i).getUserId());
-					Map<String,Object> map = new HashMap<>();
-					map.put("content",JsonUtils.objectToJson(entrancerooms)); 
-					map.put("action", "reloadCount");
-					System.out.println(buildKey(user.getUserId(), jsonObject.getString("roomid"), jsonObject.getString("password")));
-					send2User(JsonUtils.objectToJson(map), buildKey(user.getUserId(), jsonObject.getString("roomid"), jsonObject.getString("password")));
-				}
-				for (int i = 0; i < 5; i++) {
-					Body entranceroomss = null;
-					if(i<selectList2.size()) {
-						entranceroomss = roomService.entrancerooms(jsonObject.getInt("roomid"),selectList2.get(i).getUserId(),jsonObject.getString("password"));
-					}
-					
-					for (int j = 0; j < selectList.size(); j++) {
-						Users user = usersService.selectById(selectList.get(j).getUserId());
-						Map<String,Object> map = new HashMap<>();
-						map.put("content",JsonUtils.objectToJson(entranceroomss)); 
-						map.put("action", "reloadCount");
-						System.out.println(buildKey(user.getUserId(), jsonObject.getString("roomid"), jsonObject.getString("password")));
-						send2User(JsonUtils.objectToJson(map), buildKey(user.getUserId(), jsonObject.getString("roomid"), jsonObject.getString("password")));
-					}
-				}
-			}else {
-				for (int i = 0; i < selectList.size(); i++) {
-					Users user = usersService.selectById(selectList.get(i).getUserId());
-					Map<String,Object> map = new HashMap<>();
-					map.put("content",JsonUtils.objectToJson(entrancerooms)); 
-					map.put("action", "reloadCount");
-					System.out.println(buildKey(user.getUserId(), jsonObject.getString("roomid"), jsonObject.getString("password")));
-					send2User(JsonUtils.objectToJson(map), buildKey(user.getUserId(), jsonObject.getString("roomid"), jsonObject.getString("password")));
-				}
-			}
-		}else {
 			for (int i = 0; i < selectList.size(); i++) {
 				Users user = usersService.selectById(selectList.get(i).getUserId());
 				Map<String,Object> map = new HashMap<>();
@@ -117,7 +84,7 @@ public class WebSocket {
 				send2User(JsonUtils.objectToJson(map), buildKey(user.getUserId(), jsonObject.getString("roomid"), jsonObject.getString("password")));
 			}
 		}
-	}
+//	}
 
 	/**
 	 * 连接关闭调用的方法

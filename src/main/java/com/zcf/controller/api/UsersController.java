@@ -5,8 +5,10 @@ import com.baomidou.mybatisplus.toolkit.StringUtils;
 import com.zcf.common.json.Body;
 import com.zcf.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -16,7 +18,8 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @CrossOrigin
 @ResponseBody
-@RestController("/users")
+@Controller
+@RequestMapping("/users/")
 public class UsersController {
 
     @Autowired

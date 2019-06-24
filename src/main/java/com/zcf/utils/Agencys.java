@@ -2090,10 +2090,20 @@ public class Agencys {
 				 List<Agency> selectList = agencymapper.selectList(wrapper);
 				 Double shangjia = selectList.get(0).getChoushuiBili()*money;//上级代理
 				 
+				 shangjiyonghu.setUserRechargeIntegral(shangjiyonghu.getUserRechargeIntegral()+shangjia);
+				 usersmapper.updateById(shangjiyonghu);//上级
+				 
+				 Accountdetails shangji = new Accountdetails();//自己拿自己的分红
+				 shangji.setMoney(shangjia+"");
+				 shangji.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 shangji.setAddTime(Hutool.parseDateToString());
+				 shangji.setSymbol(1);//加减符号    1加号，2减号
+				 shangji.setUseridId(shangjiyonghu.getUserId());//上级用户id
+				 accountdetailsmapper.insert(shangji);
+				 
 				 EntityWrapper<Users> wraooer = new EntityWrapper<>();//三级
 				 wraooer.eq("user_invitation_code", shangjiyonghu.getTheHigherTheAgent());
 				 List<Users> selectList2 = usersmapper.selectList(wraooer);
-				 
 				 Double sanjis= 0.0;
 				 Double erjis = 0.0;
 				 Double yiges = 0.0;
@@ -2102,12 +2112,40 @@ public class Agencys {
 						 EntityWrapper<Agency> shangjishangji = new EntityWrapper<>();
 						 shangjishangji.eq("ageny_class", selectList2.get(0).getUserGrade());
 						 List<Agency> selectList3 = agencymapper.selectList(shangjishangji);
+						 sanjis= selectList3.get(0).getChoushuiBili()*money;//三级抽水总额
+						 
+						 selectList2.get(0).setUserRechargeIntegral(selectList2.get(0).getUserRechargeIntegral()+sanjis);
+						 usersmapper.updateById(selectList2.get(0));//上级
+						 
+						 Accountdetails sanji = new Accountdetails();//自己拿自己的分红
+						 sanji.setMoney(sanjis+"");
+						 sanji.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+						 sanji.setAddTime(Hutool.parseDateToString());
+						 sanji.setSymbol(1);//加减符号    1加号，2减号
+						 sanji.setUseridId(selectList2.get(0).getUserId());//上级用户id
+						 accountdetailsmapper.insert(sanji);
+						 
 					 }
 					 EntityWrapper<Users> erji = new EntityWrapper<>();//二级
 					 erji.eq("user_invitation_code", shangjiyonghu.getTheHigherTheAgent());
 					 List<Users> erjilist = usersmapper.selectList(erji);
 					 if(!erjilist.isEmpty()) {
 						 if(selectList2.get(0).getUserGrade()>erjilist.get(0).getUserGrade()) {
+							 EntityWrapper<Agency> shangjishangji = new EntityWrapper<>();
+							 shangjishangji.eq("ageny_class", erjilist.get(0).getUserGrade());
+							 List<Agency> selectList3 = agencymapper.selectList(shangjishangji);
+							 erjis= selectList3.get(0).getChoushuiBili()*money;//二级级抽水总额
+							 
+							 erjilist.get(0).setUserRechargeIntegral(erjilist.get(0).getUserRechargeIntegral()+erjis);
+							 usersmapper.updateById(erjilist.get(0));//上级
+							 
+							 Accountdetails erjiss = new Accountdetails();//自己拿自己的分红
+							 erjiss.setMoney(erjis+"");
+							 erjiss.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+							 erjiss.setAddTime(Hutool.parseDateToString());
+							 erjiss.setSymbol(1);//加减符号    1加号，2减号
+							 erjiss.setUseridId(erjilist.get(0).getUserId());//上级用户id
+							 accountdetailsmapper.insert(erjiss);
 							 
 						 }
 						 EntityWrapper<Users> yiji = new EntityWrapper<>();//一级
@@ -2115,20 +2153,481 @@ public class Agencys {
 						 List<Users> yijilisy = usersmapper.selectList(yiji);
 						 if(!selectList2.isEmpty()) {
 							 if(erjilist.get(0).getUserGrade()>yijilisy.get(0).getUserGrade()) {
+								 EntityWrapper<Agency> shangjishangji = new EntityWrapper<>();
+								 shangjishangji.eq("ageny_class", yijilisy.get(0).getUserGrade());
+								 List<Agency> selectList3 = agencymapper.selectList(shangjishangji);
+								 yiges= selectList3.get(0).getChoushuiBili()*money;//一级抽水总额
+								 
+								 yijilisy.get(0).setUserRechargeIntegral(yijilisy.get(0).getUserRechargeIntegral()+yiges);
+								 usersmapper.updateById(yijilisy.get(0));//上级
+								 
+								 Accountdetails yijis = new Accountdetails();//自己拿自己的分红
+								 yijis.setMoney(yiges+"");
+								 yijis.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+								 yijis.setAddTime(Hutool.parseDateToString());
+								 yijis.setSymbol(1);//加减符号    1加号，2减号
+								 yijis.setUseridId(yijilisy.get(0).getUserId());//上级用户id
+								 accountdetailsmapper.insert(yijis);
+								 
+							 }
+						 }
+					 }
+				 }
+				 EntityWrapper<Agency> ziji = new EntityWrapper<>();
+				 ziji.eq("ageny_class", 5);
+				 List<Agency> zijilist = agencymapper.selectList(ziji);
+				 Double zijimoney = zijilist.get(0).getChoushuiBili()*money;//自己是五级代理  自己拿自己的代理抽水
+				 
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+zijimoney);
+				 usersmapper.updateById(yingjia);//自己拿自己分红
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+shengyumoney);
+				 usersmapper.updateById(yingjia);//自己拿自己抢的包
+				 
+				 Accountdetails zijifenhong = new Accountdetails();//自己拿自己的分红
+				 zijifenhong.setMoney(ziji+"");
+				 zijifenhong.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 zijifenhong.setAddTime(Hutool.parseDateToString());
+				 zijifenhong.setSymbol(1);//加减符号    1加号，2减号
+				 zijifenhong.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(zijifenhong);
+				 
+				 Accountdetails qiangbao = new Accountdetails();//自己拿自己的分红
+				 qiangbao.setMoney(shengyumoney+"");
+				 qiangbao.setType(5);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 qiangbao.setAddTime(Hutool.parseDateToString());
+				 qiangbao.setSymbol(1);//加减符号    1加号，2减号
+				 qiangbao.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(qiangbao);
+				 
+				 Double pingtai = money-shangjia-sanjis-erjis-yiges;//平台所得
+				 
+				 Accountdetails pingtais = new Accountdetails();//自己拿自己的分红
+				 pingtais.setMoney(pingtai+"");
+				 pingtais.setType(7);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 pingtais.setAddTime(Hutool.parseDateToString());
+				 pingtais.setSymbol(1);//加减符号    1加号，2减号
+				 accountdetailsmapper.insert(pingtais);
+				 
+				 
+			 }else if(yingjia.getUserGrade().intValue()==6){
+				 EntityWrapper<Agency> wrapper = new EntityWrapper<>();
+				 wrapper.notIn("ageny_class", "5,6");
+				 List<Agency> selectList = agencymapper.selectList(wrapper);
+				 Double shangjibli= 0.0;
+				 for (int i = 0; i < selectList.size(); i++) {
+					 shangjibli+=selectList.get(i).getChoushuiBili();
+				}
+				 Double shangjias = shangjibli*money;//上级代理
+				 
+				 shangjiyonghu.setUserRechargeIntegral(shangjiyonghu.getUserRechargeIntegral()+shangjias);
+				 usersmapper.updateById(shangjiyonghu);//上级
+				 
+				 Accountdetails shangji = new Accountdetails();//自己拿自己的分红
+				 shangji.setMoney(shangjias+"");
+				 shangji.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 shangji.setAddTime(Hutool.parseDateToString());
+				 shangji.setSymbol(1);//加减符号    1加号，2减号
+				 shangji.setUseridId(shangjiyonghu.getUserId());//上级用户id
+				 accountdetailsmapper.insert(shangji);
+				 
+				 EntityWrapper<Users> wraooer = new EntityWrapper<>();//三级
+				 wraooer.eq("user_invitation_code", shangjiyonghu.getTheHigherTheAgent());
+				 List<Users> selectList2 = usersmapper.selectList(wraooer);
+				 Double sanjis= 0.0;
+				 Double erjis = 0.0;
+				 Double yiges = 0.0;
+				 if(!selectList2.isEmpty()) {
+					 if(shangjiyonghu.getUserGrade()>selectList2.get(0).getUserGrade()) {
+						 EntityWrapper<Agency> shangjishangji = new EntityWrapper<>();
+						 shangjishangji.eq("ageny_class", selectList2.get(0).getUserGrade());
+						 List<Agency> selectList3 = agencymapper.selectList(shangjishangji);
+						 sanjis= selectList3.get(0).getChoushuiBili()*money;//三级抽水总额
+						 
+						 selectList2.get(0).setUserRechargeIntegral(selectList2.get(0).getUserRechargeIntegral()+sanjis);
+						 usersmapper.updateById(selectList2.get(0));//上级
+						 
+						 Accountdetails sanji = new Accountdetails();//自己拿自己的分红
+						 sanji.setMoney(sanjis+"");
+						 sanji.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+						 sanji.setAddTime(Hutool.parseDateToString());
+						 sanji.setSymbol(1);//加减符号    1加号，2减号
+						 sanji.setUseridId(selectList2.get(0).getUserId());//上级用户id
+						 accountdetailsmapper.insert(sanji);
+						 
+					 }
+					 EntityWrapper<Users> erji = new EntityWrapper<>();//二级
+					 erji.eq("user_invitation_code", shangjiyonghu.getTheHigherTheAgent());
+					 List<Users> erjilist = usersmapper.selectList(erji);
+					 if(!erjilist.isEmpty()) {
+						 if(selectList2.get(0).getUserGrade()>erjilist.get(0).getUserGrade()) {
+							 EntityWrapper<Agency> shangjishangji = new EntityWrapper<>();
+							 shangjishangji.eq("ageny_class", erjilist.get(0).getUserGrade());
+							 List<Agency> selectList3 = agencymapper.selectList(shangjishangji);
+							 erjis= selectList3.get(0).getChoushuiBili()*money;//二级级抽水总额
+							 
+							 erjilist.get(0).setUserRechargeIntegral(erjilist.get(0).getUserRechargeIntegral()+erjis);
+							 usersmapper.updateById(erjilist.get(0));//上级
+							 
+							 Accountdetails erjiss = new Accountdetails();//自己拿自己的分红
+							 erjiss.setMoney(erjis+"");
+							 erjiss.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+							 erjiss.setAddTime(Hutool.parseDateToString());
+							 erjiss.setSymbol(1);//加减符号    1加号，2减号
+							 erjiss.setUseridId(erjilist.get(0).getUserId());//上级用户id
+							 accountdetailsmapper.insert(erjiss);
+							 
+						 }
+						 EntityWrapper<Users> yiji = new EntityWrapper<>();//一级
+						 yiji.eq("user_invitation_code", shangjiyonghu.getTheHigherTheAgent());
+						 List<Users> yijilisy = usersmapper.selectList(yiji);
+						 if(!selectList2.isEmpty()) {
+							 if(erjilist.get(0).getUserGrade()>yijilisy.get(0).getUserGrade()) {
+								 EntityWrapper<Agency> shangjishangji = new EntityWrapper<>();
+								 shangjishangji.eq("ageny_class", yijilisy.get(0).getUserGrade());
+								 List<Agency> selectList3 = agencymapper.selectList(shangjishangji);
+								 yiges= selectList3.get(0).getChoushuiBili()*money;//一级抽水总额
+								 
+								 yijilisy.get(0).setUserRechargeIntegral(yijilisy.get(0).getUserRechargeIntegral()+yiges);
+								 usersmapper.updateById(yijilisy.get(0));//上级
+								 
+								 Accountdetails yijis = new Accountdetails();//自己拿自己的分红
+								 yijis.setMoney(yiges+"");
+								 yijis.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+								 yijis.setAddTime(Hutool.parseDateToString());
+								 yijis.setSymbol(1);//加减符号    1加号，2减号
+								 yijis.setUseridId(yijilisy.get(0).getUserId());//上级用户id
+								 accountdetailsmapper.insert(yijis);
 								 
 							 }
 						 }
 					 }
 				 }
 				 
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+shengyumoney);
+				 usersmapper.updateById(yingjia);//自己拿自己抢的包
 				 
+				 Accountdetails qiangbao = new Accountdetails();//自己拿自己的分红
+				 qiangbao.setMoney(shengyumoney+"");
+				 qiangbao.setType(5);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 qiangbao.setAddTime(Hutool.parseDateToString());
+				 qiangbao.setSymbol(1);//加减符号    1加号，2减号
+				 qiangbao.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(qiangbao);
 				 
-			 }else if(yingjia.getUserGrade().intValue()==6){
+				 Double pingtai = money-shangjias-sanjis-erjis-yiges;//平台所得
 				 
+				 Accountdetails pingtais = new Accountdetails();//自己拿自己的分红
+				 pingtais.setMoney(pingtai+"");
+				 pingtais.setType(7);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 pingtais.setAddTime(Hutool.parseDateToString());
+				 pingtais.setSymbol(1);//加减符号    1加号，2减号
+				 accountdetailsmapper.insert(pingtais);
 			 }
 		 }else if(shangjiyonghu.getUserGrade().intValue()==5) {//上级是五级代理时,判断有没有上级代理
-			 
+			 if(yingjia.getUserGrade().intValue()==1) {
+				 EntityWrapper<Agency> wrapper = new EntityWrapper<>();
+				 List<Agency> selectList = agencymapper.selectList(wrapper);
+				 Double choushui = 0.0;
+				 for (int i = 0; i < selectList.size(); i++) {
+					 choushui+=selectList.get(i).getChoushuiBili();
+				 }
+				 Double ziji = choushui*money;
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+ziji);
+				 usersmapper.updateById(yingjia);//自己拿自己分红
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+shengyumoney);
+				 usersmapper.updateById(yingjia);//自己拿自己抢的包
+				 
+				 Accountdetails zijifenhong = new Accountdetails();//自己拿自己的分红
+				 zijifenhong.setMoney(ziji+"");
+				 zijifenhong.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 zijifenhong.setAddTime(Hutool.parseDateToString());
+				 zijifenhong.setSymbol(1);//加减符号    1加号，2减号
+				 zijifenhong.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(zijifenhong);
+				 
+				 Accountdetails qiangbao = new Accountdetails();//自己拿自己的分红
+				 qiangbao.setMoney(shengyumoney+"");
+				 qiangbao.setType(5);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 qiangbao.setAddTime(Hutool.parseDateToString());
+				 qiangbao.setSymbol(1);//加减符号    1加号，2减号
+				 qiangbao.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(qiangbao);
+				 
+				 Double pingtaichoushui = money-ziji;
+				 Accountdetails pingtai = new Accountdetails();//自己拿自己的分红
+				 pingtai.setMoney(pingtaichoushui+"");
+				 pingtai.setType(7);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 pingtai.setAddTime(Hutool.parseDateToString());
+				 pingtai.setSymbol(1);//加减符号    1加号，2减号
+				 accountdetailsmapper.insert(pingtai);
+			 }else if(yingjia.getUserGrade().intValue()==2) {
+				 EntityWrapper<Agency> wrapper = new EntityWrapper<>();
+				 wrapper.notIn("ageny_class", "2,3,4,5");
+				 List<Agency> selectList = agencymapper.selectList(wrapper);
+				 Double choushui = 0.0;
+				 for (int i = 0; i < selectList.size(); i++) {
+					 choushui+=selectList.get(i).getChoushuiBili();
+				 }
+				 Double ziji = choushui*money;
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+ziji);
+				 usersmapper.updateById(yingjia);//自己拿自己分红
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+shengyumoney);
+				 usersmapper.updateById(yingjia);//自己拿自己抢的包
+				 
+				 Accountdetails zijifenhong = new Accountdetails();//自己拿自己的分红
+				 zijifenhong.setMoney(ziji+"");
+				 zijifenhong.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 zijifenhong.setAddTime(Hutool.parseDateToString());
+				 zijifenhong.setSymbol(1);//加减符号    1加号，2减号
+				 zijifenhong.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(zijifenhong);
+				 
+				 Accountdetails qiangbao = new Accountdetails();//自己拿自己的分红
+				 qiangbao.setMoney(shengyumoney+"");
+				 qiangbao.setType(5);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 qiangbao.setAddTime(Hutool.parseDateToString());
+				 qiangbao.setSymbol(1);//加减符号    1加号，2减号
+				 qiangbao.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(qiangbao);
+				 
+				 Double pingtaichoushui = money-ziji;
+				 Accountdetails pingtai = new Accountdetails();//自己拿自己的分红
+				 pingtai.setMoney(pingtaichoushui+"");
+				 pingtai.setType(7);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 pingtai.setAddTime(Hutool.parseDateToString());
+				 pingtai.setSymbol(1);//加减符号    1加号，2减号
+				 accountdetailsmapper.insert(pingtai);
+			 }else if(yingjia.getUserGrade().intValue()==3) {
+				 EntityWrapper<Agency> wrapper = new EntityWrapper<>();
+				 wrapper.notIn("ageny_class", "3,4,5");
+				 List<Agency> selectList = agencymapper.selectList(wrapper);
+				 Double choushui = 0.0;
+				 for (int i = 0; i < selectList.size(); i++) {
+					 choushui+=selectList.get(i).getChoushuiBili();
+				 }
+				 Double ziji = choushui*money;
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+ziji);
+				 usersmapper.updateById(yingjia);//自己拿自己分红
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+shengyumoney);
+				 usersmapper.updateById(yingjia);//自己拿自己抢的包
+				 
+				 Accountdetails zijifenhong = new Accountdetails();//自己拿自己的分红
+				 zijifenhong.setMoney(ziji+"");
+				 zijifenhong.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 zijifenhong.setAddTime(Hutool.parseDateToString());
+				 zijifenhong.setSymbol(1);//加减符号    1加号，2减号
+				 zijifenhong.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(zijifenhong);
+				 
+				 Accountdetails qiangbao = new Accountdetails();//自己拿自己的分红
+				 qiangbao.setMoney(shengyumoney+"");
+				 qiangbao.setType(5);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 qiangbao.setAddTime(Hutool.parseDateToString());
+				 qiangbao.setSymbol(1);//加减符号    1加号，2减号
+				 qiangbao.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(qiangbao);
+				 
+				 Double pingtaichoushui = money-ziji;
+				 Accountdetails pingtai = new Accountdetails();//自己拿自己的分红
+				 pingtai.setMoney(pingtaichoushui+"");
+				 pingtai.setType(7);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 pingtai.setAddTime(Hutool.parseDateToString());
+				 pingtai.setSymbol(1);//加减符号    1加号，2减号
+				 accountdetailsmapper.insert(pingtai);
+			 }else if(yingjia.getUserGrade().intValue()==4) {
+				 EntityWrapper<Agency> wrapper = new EntityWrapper<>();
+				 wrapper.notIn("ageny_class", "3,4,5");
+				 List<Agency> selectList = agencymapper.selectList(wrapper);
+				 Double choushui = 0.0;
+				 for (int i = 0; i < selectList.size(); i++) {
+					 choushui+=selectList.get(i).getChoushuiBili();
+				 }
+				 Double ziji = choushui*money;
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+ziji);
+				 usersmapper.updateById(yingjia);//自己拿自己分红
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+shengyumoney);
+				 usersmapper.updateById(yingjia);//自己拿自己抢的包
+				 
+				 Accountdetails zijifenhong = new Accountdetails();//自己拿自己的分红
+				 zijifenhong.setMoney(ziji+"");
+				 zijifenhong.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 zijifenhong.setAddTime(Hutool.parseDateToString());
+				 zijifenhong.setSymbol(1);//加减符号    1加号，2减号
+				 zijifenhong.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(zijifenhong);
+				 
+				 Accountdetails qiangbao = new Accountdetails();//自己拿自己的分红
+				 qiangbao.setMoney(shengyumoney+"");
+				 qiangbao.setType(5);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 qiangbao.setAddTime(Hutool.parseDateToString());
+				 qiangbao.setSymbol(1);//加减符号    1加号，2减号
+				 qiangbao.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(qiangbao);
+				 
+				 Double pingtaichoushui = money-ziji;
+				 Accountdetails pingtai = new Accountdetails();//自己拿自己的分红
+				 pingtai.setMoney(pingtaichoushui+"");
+				 pingtai.setType(7);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 pingtai.setAddTime(Hutool.parseDateToString());
+				 pingtai.setSymbol(1);//加减符号    1加号，2减号
+				 accountdetailsmapper.insert(pingtai);
+			 }else if(yingjia.getUserGrade().intValue()==5) {
+				 EntityWrapper<Agency> wrapper = new EntityWrapper<>();
+				 wrapper.notIn("ageny_class", "5,6");
+				 List<Agency> selectList = agencymapper.selectList(wrapper);
+				 Double choushui = 0.0;
+				 for (int i = 0; i < selectList.size(); i++) {
+					 choushui+=selectList.get(i).getChoushuiBili();
+				 }
+				 Double ziji = choushui*money;
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+ziji);
+				 usersmapper.updateById(yingjia);//自己拿自己分红
+				 yingjia.setUserRechargeIntegral(yingjia.getUserRechargeIntegral()+shengyumoney);
+				 usersmapper.updateById(yingjia);//自己拿自己抢的包
+				 
+				 Accountdetails zijifenhong = new Accountdetails();//自己拿自己的分红
+				 zijifenhong.setMoney(ziji+"");
+				 zijifenhong.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 zijifenhong.setAddTime(Hutool.parseDateToString());
+				 zijifenhong.setSymbol(1);//加减符号    1加号，2减号
+				 zijifenhong.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(zijifenhong);
+				 
+				 Accountdetails qiangbao = new Accountdetails();//自己拿自己的分红
+				 qiangbao.setMoney(shengyumoney+"");
+				 qiangbao.setType(5);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 qiangbao.setAddTime(Hutool.parseDateToString());
+				 qiangbao.setSymbol(1);//加减符号    1加号，2减号
+				 qiangbao.setUseridId(yingjia.getUserId());//上级用户id
+				 accountdetailsmapper.insert(qiangbao);
+				 
+				 EntityWrapper<Users> wraooer = new EntityWrapper<>();//四级
+				 wraooer.eq("user_invitation_code", shangjiyonghu.getTheHigherTheAgent());
+				 List<Users> selectList2 = usersmapper.selectList(wraooer);
+				 Double sanjis= 0.0;
+				 Double erjis = 0.0;
+				 Double yiges = 0.0;
+				 Double yijishangj = 0.0;
+				 if(!selectList2.isEmpty()) {
+					 if(shangjiyonghu.getUserGrade()>selectList2.get(0).getUserGrade()) {
+						 EntityWrapper<Agency> shangjishangji = new EntityWrapper<>();
+						 shangjishangji.eq("ageny_class", selectList2.get(0).getUserGrade());
+						 List<Agency> selectList3 = agencymapper.selectList(shangjishangji);
+						 sanjis= selectList3.get(0).getChoushuiBili()*money;//三级抽水总额
+						 
+						 selectList2.get(0).setUserRechargeIntegral(selectList2.get(0).getUserRechargeIntegral()+sanjis);
+						 usersmapper.updateById(selectList2.get(0));//上级
+						 
+						 Accountdetails sanji = new Accountdetails();//自己拿自己的分红
+						 sanji.setMoney(sanjis+"");
+						 sanji.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+						 sanji.setAddTime(Hutool.parseDateToString());
+						 sanji.setSymbol(1);//加减符号    1加号，2减号
+						 sanji.setUseridId(selectList2.get(0).getUserId());//上级用户id
+						 accountdetailsmapper.insert(sanji);
+						 
+					 }
+					 EntityWrapper<Users> erji = new EntityWrapper<>();//三级
+					 erji.eq("user_invitation_code", shangjiyonghu.getTheHigherTheAgent());
+					 List<Users> erjilist = usersmapper.selectList(erji);
+					 if(!erjilist.isEmpty()) {
+						 if(selectList2.get(0).getUserGrade()>erjilist.get(0).getUserGrade()) {
+							 EntityWrapper<Agency> shangjishangji = new EntityWrapper<>();
+							 shangjishangji.eq("ageny_class", erjilist.get(0).getUserGrade());
+							 List<Agency> selectList3 = agencymapper.selectList(shangjishangji);
+							 erjis= selectList3.get(0).getChoushuiBili()*money;//二级级抽水总额
+							 
+							 erjilist.get(0).setUserRechargeIntegral(erjilist.get(0).getUserRechargeIntegral()+erjis);
+							 usersmapper.updateById(erjilist.get(0));//上级
+							 
+							 Accountdetails erjiss = new Accountdetails();//自己拿自己的分红
+							 erjiss.setMoney(erjis+"");
+							 erjiss.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+							 erjiss.setAddTime(Hutool.parseDateToString());
+							 erjiss.setSymbol(1);//加减符号    1加号，2减号
+							 erjiss.setUseridId(erjilist.get(0).getUserId());//上级用户id
+							 accountdetailsmapper.insert(erjiss);
+							 
+						 }
+						 EntityWrapper<Users> yiji = new EntityWrapper<>();//二级
+						 yiji.eq("user_invitation_code", shangjiyonghu.getTheHigherTheAgent());
+						 List<Users> yijilisy = usersmapper.selectList(yiji);
+						 if(!selectList2.isEmpty()) {
+							 if(erjilist.get(0).getUserGrade()>yijilisy.get(0).getUserGrade()) {
+								 EntityWrapper<Agency> shangjishangji = new EntityWrapper<>();
+								 shangjishangji.eq("ageny_class", yijilisy.get(0).getUserGrade());
+								 List<Agency> selectList3 = agencymapper.selectList(shangjishangji);
+								 yiges= selectList3.get(0).getChoushuiBili()*money;//一级抽水总额
+								 
+								 yijilisy.get(0).setUserRechargeIntegral(yijilisy.get(0).getUserRechargeIntegral()+yiges);
+								 usersmapper.updateById(yijilisy.get(0));//上级
+								 
+								 Accountdetails yijis = new Accountdetails();//自己拿自己的分红
+								 yijis.setMoney(yiges+"");
+								 yijis.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+								 yijis.setAddTime(Hutool.parseDateToString());
+								 yijis.setSymbol(1);//加减符号    1加号，2减号
+								 yijis.setUseridId(yijilisy.get(0).getUserId());//上级用户id
+								 accountdetailsmapper.insert(yijis);
+								 
+							 }
+							 EntityWrapper<Users> yijishangji = new EntityWrapper<>();//一级
+							 yijishangji.eq("user_invitation_code", shangjiyonghu.getTheHigherTheAgent());
+							 List<Users> yijishangjis = usersmapper.selectList(yijishangji);
+							 if(!yijishangjis.isEmpty()) {
+								 if(erjilist.get(0).getUserGrade()>yijishangjis.get(0).getUserGrade()) {
+									 EntityWrapper<Agency> yijishangjiss = new EntityWrapper<>();
+									 yijishangjiss.eq("ageny_class", yijishangjis.get(0).getUserGrade());
+									 List<Agency> selectList3 = agencymapper.selectList(yijishangjiss);
+									 yijishangj= selectList3.get(0).getChoushuiBili()*money;//一级抽水总额
+									 
+									 yijishangjis.get(0).setUserRechargeIntegral(yijishangjis.get(0).getUserRechargeIntegral()+yijishangj);
+									 usersmapper.updateById(yijishangjis.get(0));//上级
+									 
+									 Accountdetails yijis = new Accountdetails();//自己拿自己的分红
+									 yijis.setMoney(yijishangj+"");
+									 yijis.setType(6);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+									 yijis.setAddTime(Hutool.parseDateToString());
+									 yijis.setSymbol(1);//加减符号    1加号，2减号
+									 yijis.setUseridId(yijishangjis.get(0).getUserId());//上级用户id
+									 accountdetailsmapper.insert(yijis);
+								 }
+						 }
+					 }
+				 }
+				 Double pingtaichoushuis = money-yijishangj-sanjis-erjis-yiges;
+				 Accountdetails pingtai = new Accountdetails();//自己拿自己的分红
+				 pingtai.setMoney(pingtaichoushuis+"");
+				 pingtai.setType(7);//1上分，2下分，3发红包,4红包扣除，5抢红包 6分红 7平台
+				 pingtai.setAddTime(Hutool.parseDateToString());
+				 pingtai.setSymbol(1);//加减符号    1加号，2减号
+				 accountdetailsmapper.insert(pingtai);
+			 }else if(yingjia.getUserGrade().intValue()==6) {
+				 EntityWrapper<Agency> shangj = new EntityWrapper<>();
+				 shangj.eq("ageny_class", shangjiyonghu.getUserGrade());
+				 List<Agency> shangjilist = agencymapper.selectList(shangj);
+				 
+				 Double shangjichoushui = shangjilist.get(0).getChoushuiBili()*money;//用户上级抽数金额   五级
+				 
+				 EntityWrapper<Users> sijiuser = new EntityWrapper<>();
+				 sijiuser.eq("user_invitation_code", shangjiyonghu.getTheHigherTheAgent());
+				 List<Users> sijilist = usersmapper.selectList(sijiuser);
+				 
+				 if(!sijilist.isEmpty()) {
+					 if(sijilist.get(0).getUserGrade()<shangjiyonghu.getUserGrade()) {
+						 EntityWrapper<Agencys> sijiwrapper = new EntityWrapper<>();
+//						 sijiwrapper
+					 }
+					
+				 }
+				 
+			 }
 		 }
+		 
+		 }
+		 
+	}
+}
 		 
 		 
 		 
@@ -2357,5 +2856,5 @@ public class Agencys {
 //		default:
 //			break;
 //		}
-	}
-}
+//	}
+//}

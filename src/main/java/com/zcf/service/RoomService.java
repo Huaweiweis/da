@@ -81,4 +81,20 @@ public interface RoomService extends IService<Room> {
 	Body chengyuan(Integer roomid);
 	
 	Body youxizhongquit(Integer roomid);
+	/**
+	 * 用户搜索房间底分
+	 * @param difen
+	 * @return
+	 */
+	Body chaxunroom(Integer difen);
+	
+	Body xuniroom(String roomname,Double roomintegral,Integer num);
+	
+	Body sfjqrroom(Integer roomid);
+	/**
+	 * 创建虚拟房间，加入机器人
+	 * @param roomid
+	 * @return
+	 */
+	Body jiqirenfanzhu(Integer roomid);
 }
